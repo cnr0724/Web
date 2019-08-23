@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="myCtrl">TODO write content</div>
+        
+        <p>This API accepts 3 GET parameter</p>
+        <ul>
+            <li>mode : read or write (mandatory)</li>
+            <li>repo : a number of repository (choose a high number)</li>
+            <li>msg : (only for write mode)</li>
+            <li>init : (only for write mode) will not append</li>
+        </ul>
+        
+        <p>{{str1}}</p>
+        
+        <script>
+            $http({
+                method:'GET',
+                url:url,
+                params:'mode=mMode,repo=mRepo,msg=mMsg,init=mInit'
+            })
+            if(mMode.is("read")){
+                $http.get()
+            }
+        </script>
+    </body>
+</html>

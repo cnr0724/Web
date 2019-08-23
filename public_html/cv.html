@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Resume of Nuree CHOI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  type="text/css" href="./style.css"/> 
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header><h1>Nuree CHOI's Resume</h1></header>
+        
+        
+        <section>
+            <nav>
+                <h2>Brief Info</h2>
+                <img src="portrait.jpg" height="180" width="140" alt="portrait">
+                <h2>Nuree CHOI</h2>
+                <p>24, 07, 1996</p>
+            </nav>
+            
+            <h2>Etat Civil</h2>
+            <p>39 Rue des cevennes 75015, Paris<br><br></p>
+            <h2><a href='#' onclick="hideFormation()">Formation</a></h2>
+            <div id="formation">
+                <p><b>Sungkyunkwan University - Software major</b><br></p>
+                <ul id="formData">
+                    <li>March, 2015 ~ December, 2015: Studied C language, JAVA and et cetera.</li>
+                    <li>January, 2016 ~ November, 2016: Prepared for the Korean SAT, Suneung</li>
+                    <li>March, 2017 ~ June, 2018: Studied OS, Database and et cetera. 
+                        Participated in several Android projects.</li>
+                </ul>
+                <form>
+                    <dl>
+                        <dt><label for="date">Duration</label></dt>
+                        <dd><input type="text" id="date"></dd>
+                        <dt><label for="desc">Description</label></dt>
+                        <dd><input type="text" id="desc"></dd>
+                    </dl>
+                </form>
+                <button onclick="addFormation()">Add the formation</button>
+            </div>
+            
+            <article>
+                <h2>Compétences</h2>
+            <ol>
+                <li>Various programming languages</li>
+                <li>Time management</li>
+                <li>Ability to handle various software programs<br></li>
+            </ol>
+            
+            <h2>Langues Parlées</h2>
+            <p>Korean (Native)<br>
+                English (Fluent)<br>
+                French (Just started)<br></p>
+            
+            <h2>Loisirs</h2>
+            <table style="width:50%">
+                <tr>
+                    <th>SPORTS</th>
+                    <th>HOBBYS</th>
+                </tr>
+                <tr>
+                    <th>Football</th>
+                    <th>Traveling</th>
+                </tr>
+                <tr>
+                    <th>Volleyball</th>
+                    <th>Watching movie</th>
+                </tr>
+            </table>
+            
+            <form>
+                <dl>
+                    <dt><label for="mail">Mail</label></dt>
+                    <dd><input type="text" id="mail"></dd>
+                    <dt><label for="subject">Subject</label></dt>
+                    <dd><input type="text" id="subject"></dd>
+                    <dt><label for="message">Message</label></dt>
+                    <dd><textarea id="message"></textarea></dd>
+                </dl>
+            </form>
+            <button onclick="emailSend()">Validate</button>
+            <p id="show"></p>
+            </article>
+            
+            
+        </section>
+    </body>
+</html>

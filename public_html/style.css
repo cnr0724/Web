@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018. 9. 22, 오후 10:40:29
+    Author     : Nuree
+*/
+
+*{box-sizing: border-box;
+  font-family: sans-serif}
+
+body{background-color: darkkhaki;}
+
+header{
+    background-color: darkolivegreen;
+    padding:30px;
+    text-align: center;
+    color: goldenrod;}
+
+nav{
+    text-align: center;
+    background-color: darkolivegreen;
+    float:left;
+    width:15%;
+    color: gold;}
+
+#formation{
+    float:left;
+    padding:20px;
+    width:85%;}
+
+article{
+    float:left;
+    padding:20px;
+    width:100%;}
